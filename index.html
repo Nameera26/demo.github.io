@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+         *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+            
+          ul{
+            list-style-type: none;
+          }
+          nav>ul{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: darkcyan;
+            padding: 10px;
+            font-size: 20px;
+          }
+          nav>ul>li{
+            display: inline-block;
+            position: relative;
+            background-color: chartreuse;
+            border-radius: 5px;
+            padding: 0 20px;
+          }
+
+          nav>ul>li:hover>ul{
+            display: block;
+          }
+
+          nav ul li a { 
+            text-decoration: none;
+            display: block;
+            color: darkblue;
+          }
+
+          nav ul li a:hover {
+             color: darkorange;
+          }
+          nav>ul>li>ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+            width: 100%; }
+
+            nav ul li ul li {
+            position: relative;
+            background-color: yellow;
+            min-width: 165px;
+            font-size: medium;
+          }
+
+          nav>ul>li>ul>li:hover>ul {
+            display: block;
+          }
+
+            body{
+                background-image: url(https://c4.wallpaperflare.com/wallpaper/221/505/111/hands-paint-children-happiness-wallpaper-preview.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;      
+          }
+            
+
+            input[type="text"]
+            { width:50%;
+              padding: 5px; }
+
+            input[type="Email"]
+            {width:50%;
+             padding: 5px; }
+
+            input[type="Password"]
+            {width: 50%;
+             padding: 5px;}
+           
+            label { 
+            padding:10px;
+            color:darkred;
+            font-style:italic; 
+             }
+             textarea{
+                padding: 10px;
+             }
+
+            fieldset{
+             width: 40%;
+            }
+
+            legend{
+                color: darkblue;
+            }
+
+       
+        </style>
+    </head>
+    <body>
+         <nav>
+            <ul>
+                <li><a href="p1.home.html">Home</a></li>
+                <li><a href="p2.about us.html">About Us</a></li>
+                <li><a href="p3.class.html">Classes</a></li>
+                <li><a href="p4.admission.html">Admissions</a></li>
+                <li><a href="p5.pages.html">Pages</a>
+                <ul>
+                    <li><a href="p6.teacher.html">Become a Teacher</a></li>
+                    <li><a href="p7.testimonial.html">Testimonial</a></li>
+                    <li><a href="p8.teacher.html">Job Description</a></li>
+                </ul>
+                </li>
+                <li><a href="P9.contact.html">Contact Us</a></li>
+            </ul>
+           
+
+         </nav>  
+         <br><br><br>
+        <center>
+             <form>
+                <fieldset>  
+                <legend><b>Applicant Information</b></legend>
+                    <br><br>
+                <label>First name::</label>
+                <input type="text" name="fname" id="fname" placeholder="Enter Firstname">
+                <br><br>
+                <label>Last name::</label>
+                <input type="text" name="fname" id="fname" placeholder="Enter lastname">
+                <br><br>
+                <label>Email::</label>
+                <input type="Email">
+                <br><br>
+                <label>Password::</label>
+                <input type="Password">
+                <br><br>
+    
+    
+                <label>Select gender::</label>
+                <input type="radio" id="gender" name="gender" value="male">Male
+                <input type="radio" id="gender" name="gender" value="female"> Female
+                <input type="radio" id="gender" name="gender" value="Other"> Other
+                <br><br>
+    
+    
+                <label>Select skills::</label>
+                <input type="checkbox" id="Communication" name="Communication" value="Communication"> Communication
+                <input type="checkbox" id="Creative" name="Creative" value="Creative"> Creative 
+                <input type="checkbox" id="Patience" name="Patience" value="Patience"> Patience
+                <input type="checkbox" id="Dedication" name="Dedication" value="Dedication"> Dedication
+                 <br><br>
+
+                <label>Select Qualification::</label>
+                <select>
+                    <option>B.Ed</option>
+                    <option>Diploma</option>
+                    <option>PG Diploma</option>
+                    <option>B.E</option>
+                </select>
+                <br><br>
+                
+                <label>Enter address::</label>
+                <textarea>Address</textarea>
+                <br><br>
+                <input type="submit" style="padding: 10px;">
+                <input type="reset" style="padding: 10px;">
+            </fieldset>
+            </form>
+        </center>
+
+    </body>
+</html>
